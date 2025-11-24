@@ -1,0 +1,94 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eec5c5;
+    font-size: 24px;
+}
+
+
+
+.name {
+    text-align: center;
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.chicken, .lasagna, .ravioli, .map {
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: #fff0f0;
+    text-align: center;
+    width: 500px;
+    
+}
+
+.chicken > img, .lasagna > img, .ravioli > img, .map > img {
+    width: 400px;
+   
+}
+
+
+@media all and (max-width: 1000px) {
+    .chicken, .lasagna, .ravioli, .map {
+        margin: 10px auto;
+        padding: 10px;
+        width: 450px;
+    
+    }
+
+    img {
+        width: 100px;
+        
+    }
+
+   .address
+    {
+        display: none;
+    }
+
+    .chicken > img, .lasagna > img, .ravioli > img, .map > img {
+    width: 250px;
+   
+}
+    .name {
+        display: none;
+    }
+
+    
+}
+
+@media all and (max-width: 600px) {
+
+   footer {
+       display: none;
+    }
+    .chicken, .lasagna, .ravioli {
+        display: none;
+    }
+    .map {
+        margin: 10px auto;
+        padding: 20px;
+        width: 350px;
+        
+       
+    }
+
+    .map > img
+    {
+        width: 300px;
+    }
+
+    .name{
+        display: none;
+    }
+
+    h1, h2 {
+        display: none;
+    }
+
+}
