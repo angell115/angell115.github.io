@@ -1,0 +1,171 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eec5c5;
+    font-size: 24px;
+}
+
+
+
+.naming {
+    text-align: center;
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.chicken, .lasagna, .ravioli, .map {
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: #fff0f0;
+    text-align: center;
+    width: 500px;
+    
+}
+
+.chicken > img, .lasagna > img, .ravioli > img, .map > img {
+    width: 400px;
+   
+}
+
+
+@media all and (max-width: 1000px) {
+    .chicken, .lasagna, .ravioli, .map {
+        margin: 10px auto;
+        padding: 10px;
+        width: 450px;
+    
+    }
+
+    img {
+        width: 100px;
+        
+    }
+
+   .address
+    {
+        display: none;
+    }
+
+    .chicken > img, .lasagna > img, .ravioli > img, .map > img {
+    width: 250px;
+   
+}
+    .name {
+        display: none;
+    }
+
+    
+}
+
+@media all and (max-width: 600px) {
+
+   footer {
+       display: none;
+    }
+    .chicken, .lasagna, .ravioli {
+        display: none;
+    }
+    .map {
+        margin: 10px auto;
+        padding: 20px;
+        width: 350px;
+        
+       
+    }
+
+    .map > img
+    {
+        width: 300px;
+    }
+
+    .name{
+        display: none;
+    }
+
+    h1, h2 {
+        display: none;
+    }
+
+    }
+
+a {
+    text-decoration: none;
+    color: #2a2a2a;
+    margin-bottom: 16px;
+    display: inline-block;
+    background-color: rgb(222, 224, 202);
+    padding: 8px 80px;
+}
+
+
+a:hover {
+    
+    color: rgb(44, 51, 78);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+    font-weight: 600;
+    transition: color 160ms ease, background-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+
+.container {
+    display: grid ;
+    grid-template-rows: 130px 350px 130px  ;
+    grid-template-columns: 150px 150px 250px ;
+    background-color: #c2bfdd;
+    background-size: contain;
+    border: solid black;
+}
+
+.head {
+    grid-row: 1/1;
+    grid-column: 1/5;
+    border: solid rgb(0, 0, 0);
+    border-width: 5px;
+} 
+
+.asid {
+    border: solid rgb(0, 0, 0);
+    border-width: 5px;
+    grid-row: 2/4 ;
+    grid-column: 1/2 ;
+}
+
+.mains {
+     border: solid rgb(0, 0, 0);
+    border-width: 5px;
+    grid-row: 2/3 ;
+    grid-column: 2/5 ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+}
+
+.mains > h2 {
+    display: flex;
+    align-self: baseline;
+}
+
+.name {
+    background-color: lightblue;
+    
+}
+
+.foot {
+    border: solid rgb(0, 0, 0);
+    border-width: 5px;
+    grid-row: 3/4;
+    grid-column: 2/5;
+}
+
+h3 {
+    font-size: 21px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reservation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rest.css">
+    <script src="reservation.js"></script>
+</head>
+<body>
+    <a href="homepage.html">Back to Home Page</a>
+    <a href="reachus.html">Contact Us</a>
+    <a href="menu.html">Menu</a>
+    <a href="testemonials.html">Reviews</a>
+    <h1 class="title">Reservations form</h1>
+    
+
+
+    <p>At Tomato Grove, we pride ourselves on providing exceptional catering services for all occasions. Whether you're planning a birthday party, wedding, corporate event, or private dinner party, our team is dedicated to making your event memorable with delicious food and impeccable service.</p>
+    
+    <p> What service would you like?</p>
+      <form>
+        
+            <legend>Reservation Details</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="date">Event Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+            
+            <label>Service Type:</label>
+            <input type="radio" id="catering" name="service" value="catering" required>
+            <label for="catering">Catering</label>
+            <input type="radio" id="event" name="service" value="event">
+            <label for="event">Full Event Planning</label>
+            
+            <button type="submit" onclick="changeBox();">Submit Reservation</button>
+    </form> 
+ <script>
+    function changeBox() {
+        document.getElementById("tym").innerHTML = "Thank you for your reservation! We will contact you soon.";
+    }
+
+ </script>
+
+        <p id="tym">&nbsp;</p>
+</html> 
+    </body>
+    <footer>
+        <hr>
+        <p> Please reach out at: </p>
+        <p>Phone: (215) 555-5555</p>
+    </footer>
+  
